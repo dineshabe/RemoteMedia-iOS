@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="RemoteMedia" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Paste link to video or a page containing the video" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="78q-dI-gAb">
+                                <rect key="frame" x="16" y="74" width="343" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="2gQ-lN-xEb"/>
+                                    <constraint firstAttribute="width" constant="343" id="m2r-xH-dT8"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vwm-6t-u6r">
+                                <rect key="frame" x="16" y="130" width="167.5" height="30"/>
+                                <state key="normal" title="Look for Video"/>
+                                <connections>
+                                    <action selector="lookForVideos:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AIh-Ah-BDx"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n4w-oU-Drv">
+                                <rect key="frame" x="191.5" y="130" width="167.5" height="30"/>
+                                <state key="normal" title="Send link"/>
+                                <connections>
+                                    <action selector="sendVideo:" destination="BYZ-38-t0r" eventType="touchUpInside" id="u81-tJ-ug9"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="QqW-Ts-kFf">
+                                <rect key="frame" x="16" y="472" width="343" height="175"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="175" id="7Ns-CV-1Zw"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="175" id="F0C-6M-z1N"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yaf-PL-2yY">
+                                <rect key="frame" x="151" y="421" width="73" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Qo6-NF-MX7"/>
+                                    <constraint firstAttribute="width" constant="73" id="Xd2-5y-IAE"/>
+                                </constraints>
+                                <state key="normal" title="Clear Logs"/>
+                                <connections>
+                                    <action selector="clearLogs:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tFa-l9-JQe"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="n4w-oU-Drv" secondAttribute="trailing" constant="16" id="9FR-ZO-UuF"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="QqW-Ts-kFf" secondAttribute="bottom" constant="20" id="Bqt-yU-FEf"/>
+                            <constraint firstItem="Yaf-PL-2yY" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="DJK-3x-adI"/>
+                            <constraint firstItem="78q-dI-gAb" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="54" id="E6a-C9-ESZ"/>
+                            <constraint firstItem="n4w-oU-Drv" firstAttribute="width" secondItem="Vwm-6t-u6r" secondAttribute="width" id="EYr-wH-s58"/>
+                            <constraint firstItem="n4w-oU-Drv" firstAttribute="leading" secondItem="Vwm-6t-u6r" secondAttribute="trailing" constant="8" id="IPz-9Q-mre"/>
+                            <constraint firstItem="Vwm-6t-u6r" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="KtU-0w-vfU"/>
+                            <constraint firstItem="n4w-oU-Drv" firstAttribute="top" secondItem="78q-dI-gAb" secondAttribute="bottom" constant="26" id="TU5-c1-brc"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="QqW-Ts-kFf" secondAttribute="trailing" constant="16" id="Y3x-fx-8TL"/>
+                            <constraint firstItem="QqW-Ts-kFf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="Ysq-wn-q0b"/>
+                            <constraint firstItem="QqW-Ts-kFf" firstAttribute="top" secondItem="Yaf-PL-2yY" secondAttribute="bottom" constant="21" id="cLq-ng-JkC"/>
+                            <constraint firstItem="78q-dI-gAb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="d6Y-Mu-Pac"/>
+                            <constraint firstItem="Vwm-6t-u6r" firstAttribute="top" secondItem="78q-dI-gAb" secondAttribute="bottom" constant="26" id="faa-0N-SCF"/>
+                            <constraint firstItem="n4w-oU-Drv" firstAttribute="leading" secondItem="Vwm-6t-u6r" secondAttribute="trailing" constant="8" id="kO8-s9-7sa"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="logsView" destination="QqW-Ts-kFf" id="Qdg-Dc-gF4"/>
+                        <outlet property="urlTextField" destination="78q-dI-gAb" id="5eZ-8D-Qia"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
+        </scene>
+    </scenes>
+</document>
