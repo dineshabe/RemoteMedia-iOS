@@ -14,6 +14,7 @@
 		BC0C48782087A84D00F792DF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC0C48772087A84D00F792DF /* Assets.xcassets */; };
 		BC0C487B2087A84D00F792DF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC0C48792087A84D00F792DF /* LaunchScreen.storyboard */; };
 		BC0C48852087AD7500F792DF /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC0C48842087AD7500F792DF /* Logger.swift */; };
+		BCBF816B208857A80071174D /* BonjourService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCBF816A208857A80071174D /* BonjourService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		BC0C487A2087A84D00F792DF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BC0C487C2087A84D00F792DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BC0C48842087AD7500F792DF /* Logger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
+		BCBF816A208857A80071174D /* BonjourService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BonjourService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +82,7 @@
 		BC0C486F2087A84C00F792DF /* RemoteMedia */ = {
 			isa = PBXGroup;
 			children = (
+				BCBF816A208857A80071174D /* BonjourService.swift */,
 				BC0C48842087AD7500F792DF /* Logger.swift */,
 				BC0C48702087A84C00F792DF /* AppDelegate.swift */,
 				BC0C48722087A84C00F792DF /* ViewController.swift */,
@@ -206,6 +209,7 @@
 				BC0C48732087A84C00F792DF /* ViewController.swift in Sources */,
 				BC0C48852087AD7500F792DF /* Logger.swift in Sources */,
 				BC0C48712087A84C00F792DF /* AppDelegate.swift in Sources */,
+				BCBF816B208857A80071174D /* BonjourService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
